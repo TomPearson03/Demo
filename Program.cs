@@ -3,7 +3,11 @@ using System.IO;
 using System.Collections.Generic;
 using System.Runtime;
 using System.Text;
-
+using Flurl;
+using System.Threading.Tasks;
+using System.Linq;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
 
 namespace ExaminingStrings
 {
@@ -13,7 +17,7 @@ namespace ExaminingStrings
         {
             Console.WriteLine("What text do you want to view in other formats?");
             StringChange sc = new StringChange(Console.ReadLine());
-            Console.WriteLine(sc.ToBinary());
+            Console.WriteLine(sc.ToGerman());
             
         }
     }
@@ -65,6 +69,21 @@ namespace ExaminingStrings
             }
             return(sb.ToString());
         }
+        public string ToGerman()
+        {
+
+            var url = @"https://translate.google.co.uk/#view=home&op=translate&sl=en&tl=de";
+            IWebDriver webDriver = new FirefoxDriver();
+            webDriver.Url = url;
+            IWebElement input = webDriver.FindElement(By.Id("source"));
+            input.SendKeys(subject);
+            IWebElement output = webDriver.FindElement(By.XPath("//span[@class='tlid-translation translation']"));
+            string result = output.Text;
+            webDriver.Close();
+            return (result);
+        }
+        
+
         
     }
 }

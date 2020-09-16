@@ -2,6 +2,7 @@
 using System.IO;
 using System.Collections.Generic;
 using System.Runtime;
+using System.Text;
 
 
 namespace ExaminingStrings
@@ -10,8 +11,10 @@ namespace ExaminingStrings
     {
         static void Main(string[] args)
         {
-            StringChange sc = new StringChange("Works");
-            Console.WriteLine(sc.IntoAlphabetPositions());
+            Console.WriteLine("What text do you want to view in other formats?");
+            StringChange sc = new StringChange(Console.ReadLine());
+            Console.WriteLine(sc.ToBinary());
+            
         }
     }
     class StringChange
@@ -21,7 +24,7 @@ namespace ExaminingStrings
         {
             subject = anyString;
         }
-        public string IntoAlphabetPositions()
+        public string ToAlphabetPositions()
         {
             string appPath = AppDomain.CurrentDomain.BaseDirectory;//Finds where the app path is
             string filePath = "alphabet.txt";//Name of file containing alphabet info
@@ -36,6 +39,7 @@ namespace ExaminingStrings
                 int position = Int16.Parse(postitionString);//Creates an integer with the last two values of string
                 alphabetNumbers.Add(letter, position);//Adds the letter and position to dictionary
             }
+            sr.Close();
             subject = subject.ToLower();//Ensures all letters are lower case
             foreach(char character in subject)
             {
@@ -51,6 +55,15 @@ namespace ExaminingStrings
             }
             return (result);
 
+        }
+        public string ToBinary()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach(var character in subject.ToCharArray())
+            {
+                sb.Append(Convert.ToString(character, 2).PadLeft(8, '0'));
+            }
+            return(sb.ToString());
         }
         
     }

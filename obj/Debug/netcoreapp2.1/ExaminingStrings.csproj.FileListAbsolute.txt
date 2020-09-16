@@ -1,0 +1,11 @@
+C:\Users\tommy\OneDrive - The Consortium Academy Trust\ALevelComputerScience\ExaminingStrings\bin\Debug\netcoreapp2.1\ExaminingStrings.deps.json
+C:\Users\tommy\OneDrive - The Consortium Academy Trust\ALevelComputerScience\ExaminingStrings\bin\Debug\netcoreapp2.1\ExaminingStrings.runtimeconfig.json
+C:\Users\tommy\OneDrive - The Consortium Academy Trust\ALevelComputerScience\ExaminingStrings\bin\Debug\netcoreapp2.1\ExaminingStrings.runtimeconfig.dev.json
+C:\Users\tommy\OneDrive - The Consortium Academy Trust\ALevelComputerScience\ExaminingStrings\bin\Debug\netcoreapp2.1\ExaminingStrings.dll
+C:\Users\tommy\OneDrive - The Consortium Academy Trust\ALevelComputerScience\ExaminingStrings\bin\Debug\netcoreapp2.1\ExaminingStrings.pdb
+C:\Users\tommy\OneDrive - The Consortium Academy Trust\ALevelComputerScience\ExaminingStrings\obj\Debug\netcoreapp2.1\ExaminingStrings.csprojAssemblyReference.cache
+C:\Users\tommy\OneDrive - The Consortium Academy Trust\ALevelComputerScience\ExaminingStrings\obj\Debug\netcoreapp2.1\ExaminingStrings.csproj.CoreCompileInputs.cache
+C:\Users\tommy\OneDrive - The Consortium Academy Trust\ALevelComputerScience\ExaminingStrings\obj\Debug\netcoreapp2.1\ExaminingStrings.AssemblyInfoInputs.cache
+C:\Users\tommy\OneDrive - The Consortium Academy Trust\ALevelComputerScience\ExaminingStrings\obj\Debug\netcoreapp2.1\ExaminingStrings.AssemblyInfo.cs
+C:\Users\tommy\OneDrive - The Consortium Academy Trust\ALevelComputerScience\ExaminingStrings\obj\Debug\netcoreapp2.1\ExaminingStrings.dll
+C:\Users\tommy\OneDrive - The Consortium Academy Trust\ALevelComputerScience\ExaminingStrings\obj\Debug\netcoreapp2.1\ExaminingStrings.pdb
